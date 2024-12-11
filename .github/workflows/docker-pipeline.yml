@@ -23,3 +23,7 @@ jobs:
 
       - name: Push Docker Image
         run: docker push hyoonj1129/cicd-demo:latest
+
+      - name: Deploy with Docker Compose
+        run: |
+          ssh user@server "docker-compose pull && docker-compose up -d"
