@@ -23,3 +23,8 @@ jobs:
 
       - name: Push Docker Image
         run: docker push hyoonj1129/cicd-demo:latest
+
+      - name: Run Docker Compose
+        run: |
+          docker-compose up -d
+          docker-compose ps

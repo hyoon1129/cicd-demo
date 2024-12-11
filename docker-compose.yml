@@ -1,0 +1,6 @@
+version: '3'
+services:
+  web:
+    image: hyoonj1129/cicd-demo:latest
+    ports:
+      - "8080:80"
